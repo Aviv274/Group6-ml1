@@ -35,7 +35,7 @@ max_values = {
 }
 
 # Load and preprocess the dataset
-diabetes_df = pd.read_csv("./diabetes.csv")
+diabetes_df = pd.read_csv("diabetes.csv")
 
  
 # Streamlit UI
@@ -61,7 +61,7 @@ if st.sidebar.button("Predict Diabetes"):
     
     st.subheader("Prediction Result")
     
-    if result == "Diabetic":
+    if result == 1:
         st.error("Oops! You might have diabetes. But don't worry, here’s some helpful information: [Diabetes Info](https://www.diabetes.org/)")
     else:
         st.success("Great! You are not diabetic. Keep maintaining a healthy lifestyle!")
