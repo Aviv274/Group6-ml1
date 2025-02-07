@@ -2,8 +2,8 @@ import pickle
 import numpy as np
 
 # Define file paths for the trained model and scaler
-MODEL_PATH = "logistic_regression_model.pkl"
-SCALER_PATH = "scaler.pkl"
+MODEL_PATH = "./logistic_regression_model.pkl"
+SCALER_PATH = "./scaler.pkl"
 
 # Load the trained logistic regression model
 def load_model():

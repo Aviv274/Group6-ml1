@@ -35,7 +35,7 @@ max_values = {
 }
 
 # Load and preprocess the dataset
-diabetes_df = pd.read_csv("diabetes.csv")
+diabetes_df = pd.read_csv("./diabetes.csv")
 
  
 # Streamlit UI
