@@ -29,7 +29,7 @@ max_values = {
     "Glucose": 200,
     "BloodPressure": 180,
     "SkinThickness": 60,
-    "Insulin": 300,
+    "Insulin": 300.0,
     "BMI": 65.0,
     "DiabetesPedigreeFunction": 2.0,
     "Age": 100
@@ -60,7 +60,7 @@ pregnancies = st.sidebar.number_input("Pregnancies", min_value=min_values["Pregn
 glucose = st.sidebar.number_input("Glucose Level", min_value=min_values["Glucose"], max_value=max_values["Glucose"], value=100)
 blood_pressure = st.sidebar.number_input("Blood Pressure", min_value=min_values["BloodPressure"], max_value=max_values["BloodPressure"], value=80)
 skin_thickness = st.sidebar.number_input("Skin Thickness", min_value=min_values["SkinThickness"], max_value=max_values["SkinThickness"], value=20)
-insulin = st.sidebar.number_input("Insulin Level", min_value=min_values["Insulin"], max_value=max_values["Insulin"], value=30)
+insulin = st.sidebar.number_input("Insulin Level", min_value=min_values["Insulin"], max_value=max_values["Insulin"], value=30.0)
 bmi = st.sidebar.number_input("BMI", min_value=min_values["BMI"], max_value=max_values["BMI"], value=25.0)
 diabetes_pedigree = st.sidebar.number_input("Diabetes Pedigree Function", min_value=min_values["DiabetesPedigreeFunction"], max_value=max_values["DiabetesPedigreeFunction"], value=0.5)
 age = st.sidebar.number_input("Age", min_value=min_values["Age"], max_value=max_values["Age"], value=30)
