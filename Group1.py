@@ -76,29 +76,40 @@ if st.sidebar.button("Predict Diabetes"):
     if result == 1:
         st.error("Oops! You might have diabetes. But don't worry, here’s some helpful information: [Diabetes Info](https://www.diabetes.org/)")
         st.image("https://media4.giphy.com/media/9NSeIavwr6qt1E0grf/giphy.gif", caption="-", width=350)
+        st.header(":stethoscope: Diabetes Self-Care Tips :blue_heart:")
+        st.markdown(
+            """
+            :bar_chart: *Check Your Blood Sugar*  – Test regularly to keep track of your levels.
+            :green_salad: *Eat a Balanced Diet* – Go for whole foods, limit sugary snacks, and control portions!
+            :runner: *Stay Active*  – Move for 150 minutes a week—walk, bike, or dance! :man_dancing:
+            :droplet: *Drink Water*  – Hydrate to help keep your blood sugar steady.
+            :person_in_lotus_position: *Manage Stress* – Relax with meditation or deep breathing.
+            :pills: *Take Your Meds*  –  Stick to your medication schedule, as prescribed!
+            :eye: *Check for Complications* – Regular foot and eye exams are key! :foot::eye:
+            :hugs: *Get Support*  – Connect with friends, family, or support groups for encouragement.
+            :no_smoking: *Avoid Smoking, Limit Alcohol* –  Stay smoke-free and drink in moderation.
+            """
+        )
     else:
         st.success("Great! You are not diabetic. Keep maintaining a healthy lifestyle!")
         st.image("https://img.freepik.com/free-vector/healthy-people-carrying-different-icons_53876-43069.jpg", caption="-", width=350)
-        
+        st.header("💡 Tips for Preventing Diabetes & Staying Healthy")
+        st.markdown(
+            """
+            :white_check_mark: **Eat a balanced diet** – Focus on whole foods, fiber-rich vegetables, lean proteins, and healthy fats.  
+            :woman-running: **Stay active** – Aim for at least 30 minutes of exercise most days. Walking, cycling, or dancing can help!  
+            ⚖️ **Maintain a healthy weight** – Managing weight reduces the risk of diabetes and other diseases.  
+            :droplet: **Drink plenty of water** – Staying hydrated helps regulate blood sugar levels.  
+            :bed: **Get enough sleep** – Poor sleep can affect blood sugar control. Aim for 7–9 hours per night.  
+            :stethoscope: **Monitor your health** – Regular check-ups with your doctor can help detect early signs of diabetes.  
+            """
+        )
 
     warning_message = st.empty()
     warning_message.warning("Note: This is a predictive model and should not be used as a substitute for professional medical advice.")
     time.sleep(5)
     warning_message.empty()
 
-    # Advice to avoid diabetes 
-    st.header("💡 Tips for Preventing Diabetes & Staying Healthy")
-
-    st.markdown(
-        """
-        :white_check_mark: **Eat a balanced diet** – Focus on whole foods, fiber-rich vegetables, lean proteins, and healthy fats.  
-        :woman-running: **Stay active** – Aim for at least 30 minutes of exercise most days. Walking, cycling, or dancing can help!  
-        ⚖️ **Maintain a healthy weight** – Managing weight reduces the risk of diabetes and other diseases.  
-        :droplet: **Drink plenty of water** – Staying hydrated helps regulate blood sugar levels.  
-        :bed: **Get enough sleep** – Poor sleep can affect blood sugar control. Aim for 7–9 hours per night.  
-        :stethoscope: **Monitor your health** – Regular check-ups with your doctor can help detect early signs of diabetes.  
-        """
-    )
 
 # Final note
     st.markdown("🚀 *Making small, consistent changes can help you lead a healthier, happier life!*")
